@@ -1,0 +1,17 @@
+{
+  "name": "word-swap",
+  "main": "./lib/word-swap",
+  "version": "0.0.0",
+  "description": "Swaps words around the cursor",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "word-swap:swap"
+  },
+  "repository": "https://github.com/wjkg/word-swap",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
