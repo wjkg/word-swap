@@ -23,7 +23,7 @@ module.exports = WordSwap =
 
   swapInLine: (line, position) ->
     parts = [ @reverse(line[...position]), line[position...] ]
-    words = parts.map (part) => part.match /\w+/
+    words = parts.map (part) => part.match /[\w\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u017F]+/
     return [line, position] unless words[0] and words[1]
 
     newParts = parts.map (part, i) =>
